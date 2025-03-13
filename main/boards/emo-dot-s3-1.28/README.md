@@ -39,7 +39,14 @@ Serial flasher config -> Flash size -> 4 MB
 **修改分区表：**
 
 ```
-Partition Table -> Custom partition CSV file -> partitions_4M_Supermini_Pixie_S3.csv
+Partition Table -> Custom partition CSV file -> partitions_4M_Supermini_S3.csv
+```
+
+**修改 console 默认输出：**
+
+```
+Component config -> ESP System Setting -> Channel for console output -> USB Serial/JTAG Controller
+Component config -> ESP System Setting -> Channel for console secondary output -> No secondary console
 ```
 
 **编译：**
